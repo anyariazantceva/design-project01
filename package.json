@@ -1,0 +1,17 @@
+{
+  "name": "css2",
+  "version": "1.0.0",
+  "description": "Css Project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Anna Riazantseva",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
