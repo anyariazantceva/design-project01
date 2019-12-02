@@ -242,7 +242,8 @@ body {
     grid-template-columns: 1fr;
     grid-row-gap: 0; }
   .details .testimonials__main-title {
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
     .details .testimonials__main-title::before {
       content: '';
       display: block;
@@ -289,3 +290,64 @@ body {
   .details .testimonials__title {
     font-weight: 700;
     font-size: 2rem; }
+
+.development__title {
+  margin: 0 auto; }
+  .development__title::before {
+    content: '';
+    display: block;
+    width: 26%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    left: 0;
+    top: 1rem; }
+  .development__title::after {
+    content: '';
+    display: block;
+    width: 26%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    right: 0;
+    top: 1rem; }
+
+.tabs__list {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border-bottom: 1px solid #efefef;
+  width: 70%;
+  margin: 0;
+  padding: 0; }
+
+.tabs__list-item {
+  display: block;
+  padding: 1rem 1rem 1rem 2rem;
+  width: 50%; }
+  .tabs__list-item:active {
+    background-color: #404040; }
+
+.tabs__link {
+  text-decoration: none;
+  color: #4f4d4e;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700; }
+  .tabs__link:active {
+    color: #ffffff; }
+
+.tabs__content {
+  background-color: #ffffff;
+  padding: 2rem; }
+
+.tabs__title {
+  color: #4f4d4e;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.tabs__info {
+  font-size: 1.4rem; }

@@ -207,26 +207,12 @@
 
   &::before {
     content: '';
-    display: block;
-    width: 36%;
-    height: 1.2rem;
-    background: url("../img/Border-BG.jpg") repeat-x;
-    background-size: 14%;
-    position: absolute;
-    left: 10rem;
-    top: 1rem;
+    @include background-before(36%, 10rem);
   }
 
   &::after {
     content: '';
-    display: block;
-    width: 36%;
-    height: 1.2rem;
-    background: url("../img/Border-BG.jpg") repeat-x;
-    background-size: 14%;
-    position: absolute;
-    right: 10rem;
-    top: 1rem;
+    @include background-after(36%, 10rem);
   }
 }
 
@@ -286,28 +272,15 @@
 .testimonials {
   &__main-title {
       position: relative;
+      margin: 0 auto;
       &::before {
         content: '';
-        display: block;
-        width: 37%;
-        height: 1.2rem;
-        background: url("../img/Border-BG.jpg") repeat-x;
-        background-size: 14%;
-        position: absolute;
-        left: 0;
-        top: 1rem;
+        @include background-before(37%, 0);
       }
 
       &::after {
         content: '';
-        display: block;
-        width: 37%;
-        height: 1.2rem;
-        background: url("../img/Border-BG.jpg") repeat-x;
-        background-size: 14%;
-        position: absolute;
-        right: 0;
-        top: 1rem;
+        @include background-after(37%, 0);
       }
     }
 
@@ -342,5 +315,76 @@
   }
 
   }
+
 }
 
+.development {
+
+  &__title {
+    margin: 0 auto;
+    &::before {
+      content: '';
+      @include background-before(26%, 0);
+    }
+    &::after {
+      content: '';
+      @include background-after(26%, 0);
+    }
+  }
+
+}
+
+.tabs {
+  &__list {
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid $color-light-grey;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__list-item {
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 50%;
+    &:active {
+      background-color: $color-dark-grey;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark-text;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    &:active {
+      color: $color-white;
+    }
+
+  }
+
+  &__content {
+    background-color: $color-white;
+    padding: 2rem;
+  }
+
+  &__title {
+    color: $color-dark-text;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__info {
+    font-size: 1.4rem;
+  }
+}
+
+#tabs-2 {
+  display: none;
+}

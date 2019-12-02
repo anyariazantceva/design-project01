@@ -14,3 +14,25 @@
   left: 0;
   position: absolute;
 }
+
+@mixin background-before($width, $left) {
+  display: block;
+  width: $width;
+  height: 1.2rem;
+  background: url("../img/Border-BG.jpg") repeat-x;
+  background-size: 14%;
+  position: absolute;
+  left: $left;
+  top: 1rem;
+}
+
+@mixin background-after($width, $right) {
+  display: block;
+  width: $width;
+  height: 1.2rem;
+  background: url("../img/Border-BG.jpg") repeat-x;
+  background-size: 14%;
+  position: absolute;
+  right: $right;
+  top: 1rem;
+}
