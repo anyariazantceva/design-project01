@@ -27,9 +27,9 @@ body {
   content: '';
   display: block;
   width: 100%;
-  height: 1.5rem;
+  height: 1.2rem;
   background: url("../img/Border-BG.jpg") repeat-x;
-  background-size: auto 100%; }
+  background-size: 14%; }
 
 .welcome__container {
   background-color: #404040;
@@ -111,7 +111,7 @@ body {
 
 .about {
   background-color: #efefef;
-  padding: 3rem 0; }
+  padding: 5rem 0; }
   .about__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -132,13 +132,13 @@ body {
       .about__item:hover::after {
         content: '';
         clip-path: polygon(0 0, 0% 100%, 100% 0);
-        display: block;
         width: 3rem;
         height: 3rem;
         background-color: #ffffff;
-        position: absolute;
+        display: block;
         bottom: -2.8rem;
-        left: 0; }
+        left: 0;
+        position: absolute; }
   .about__icon {
     background-color: #404040;
     border-radius: 50%;
@@ -166,3 +166,64 @@ body {
     padding: 1.5rem 4rem;
     color: #ffffff;
     border-radius: 2px; }
+
+.page__title {
+  color: #4f4d4e;
+  font-size: 2rem;
+  background-color: #efefef;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 4rem;
+  position: relative; }
+  .page__title::before {
+    content: '';
+    display: block;
+    width: 36%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    left: 10rem;
+    top: 1rem; }
+  .page__title::after {
+    content: '';
+    display: block;
+    width: 36%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    right: 10rem;
+    top: 1rem; }
+
+.gallery {
+  background-color: #efefef;
+  padding-bottom: 10rem; }
+  .gallery__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr; }
+  .gallery__item {
+    box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22); }
+  .gallery__pic {
+    width: 100%; }
+  .gallery__info {
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #4f4d4e;
+    font-size: 1.6rem;
+    position: relative; }
+    .gallery__info::after {
+      content: '';
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
+      width: 3rem;
+      height: 3rem;
+      background-color: #ffffff;
+      display: block;
+      bottom: -2.8rem;
+      left: 0;
+      position: absolute; }
+  .gallery__title {
+    font-weight: 700;
+    font-size: 1.8rem; }
