@@ -12,6 +12,10 @@ body {
   padding: 0;
   margin: 0; }
 
+ul, li, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
 .section__container {
   padding: 1rem 10rem;
   margin: 0 auto; }
@@ -239,7 +243,8 @@ body {
     grid-template-rows: 2fr 0; }
   .details__row {
     grid-column-start: 1;
-    grid-column-end: 4; }
+    grid-column-end: 4;
+    margin-top: 6rem; }
   .details__testimonials, .details__development {
     display: grid;
     grid-template-rows: 20% 2fr;
@@ -336,7 +341,8 @@ body {
 .tabs__list-item {
   display: block;
   padding: 1rem 1rem 1rem 2rem;
-  width: 50%; }
+  width: 50%;
+  border-right: 1px solid #efefef; }
   .tabs__list-item:active {
     background-color: #404040; }
 
@@ -372,3 +378,49 @@ body {
 
 #tabs-2 {
   display: none; }
+
+.contacts {
+  padding-top: 5rem;
+  background-color: #404040; }
+  .contacts__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem; }
+  .contacts__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .contacts__about-info {
+    margin-bottom: 1rem; }
+  .contacts__about-info, .contacts__address-line {
+    font-size: 1.6rem; }
+  .contacts__tweets-content {
+    font-size: 1.6rem; }
+  .contacts__tweets-bold {
+    font-weight: 700;
+    color: #ffffff; }
+  .contacts__flick-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: .5rem; }
+  .contacts__flick-item {
+    width: 9rem;
+    height: 9rem;
+    background-color: #343434; }
+
+.posts__list {
+  list-style: none; }
+
+.posts__list-item {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 1rem; }
+
+.posts__link {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 1.6rem; }
+  .posts__link:hover {
+    color: #4e91d7; }
