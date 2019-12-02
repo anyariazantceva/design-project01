@@ -266,5 +266,81 @@
   }
 }
 
+.details {
+  background-color: $color-light-grey;
+  padding-bottom: 12rem;
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr;
+  }
 
+  &__testimonials, &__development {
+    display: grid;
+    grid-template-rows: 20% 2fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+  }
+
+.testimonials {
+  &__main-title {
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        width: 37%;
+        height: 1.2rem;
+        background: url("../img/Border-BG.jpg") repeat-x;
+        background-size: 14%;
+        position: absolute;
+        left: 0;
+        top: 1rem;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 37%;
+        height: 1.2rem;
+        background: url("../img/Border-BG.jpg") repeat-x;
+        background-size: 14%;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+      }
+    }
+
+  &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 4rem;
+      grid-column-gap: 2rem;
+
+    }
+
+  &__item {
+      background-color: $color-white;
+      position: relative;
+    @include box-shadow;
+      &::after {
+        content: '';
+        @include triangle;
+      }
+
+    }
+
+  &__text {
+    padding: 2rem;
+    color: $color-dark-text;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  }
+}
 
