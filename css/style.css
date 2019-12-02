@@ -19,18 +19,19 @@ body {
 .welcome__container {
   background-color: #404040;
   display: grid;
-  grid-template-rows: 40rem 6rem;
-  grid-gap: 6rem; }
+  grid-template-rows: 32rem 6rem;
+  grid-row-gap: 6rem; }
 
 .welcome__row-first {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 38rem;
   grid-template-columns: 1fr 30%;
   grid-column-gap: 4rem;
   justify-content: space-between; }
 
 .welcome__row--image {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .welcome__title {
   font-size: 2rem;
@@ -67,9 +68,9 @@ body {
 .welcome__second--left {
   display: grid;
   padding: 0 3rem;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 50% 15%;
   grid-template-rows: 7rem;
-  grid-column-gap: 20%;
+  grid-column-gap: 35%;
   background-color: #4e91d7;
   align-items: center; }
 
