@@ -157,7 +157,7 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   padding: 5rem 0; }
   .about__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr;
     grid-column-gap: 2rem; }
   .about__item {
@@ -215,7 +215,7 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10rem; }
   .gallery__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 2rem;
     grid-template-rows: 1fr; }
   .gallery__item {
@@ -399,7 +399,7 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   background-color: #404040; }
   .contacts__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2rem; }
   .contacts__title {
     color: #ffffff;
@@ -466,8 +466,6 @@ ul, li, h1, h2, h3, h4, h5, h6 {
     align-items: center; }
   .welcome__second--left {
     grid-template-columns: 1fr 1fr; }
-  .about__container {
-    grid-template-columns: 1fr 1fr; }
   .page__title::before {
     display: block;
     width: 23%;
@@ -486,9 +484,6 @@ ul, li, h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 10rem;
     top: 1rem; }
-  .gallery__container {
-    grid-template-columns: 1fr;
-    grid-row-gap: 2rem; }
   .details__container {
     grid-template-columns: auto;
     grid-column-gap: 2rem;
@@ -510,8 +505,6 @@ ul, li, h1, h2, h3, h4, h5, h6 {
     display: none; }
   .development__title::after {
     display: none; }
-  .contacts__container {
-    grid-template-columns: 1fr 1fr; }
   .footer__container {
     grid-template-columns: 1fr 1fr; } }
 
@@ -524,10 +517,10 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   .welcome__second-btn {
     padding: 1rem 2rem;
     font-size: 1rem; }
-  .about__container {
-    grid-template-columns: 1fr; }
-  .contacts__container {
-    grid-template-columns: 1fr; } }
+  .page__title::before {
+    display: none; }
+  .page__title::after {
+    display: none; } }
 
 @media screen and (max-width: 450px) {
   .section__container {
