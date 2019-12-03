@@ -1,0 +1,164 @@
+
+// Section details
+
+.details {
+  background-color: $color-light-grey;
+  padding-bottom: 12rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 10rem;
+    grid-template-rows: 2fr 0;
+  }
+
+  &__row {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 6rem;
+  }
+  &__testimonials, &__development {
+    display: grid;
+    grid-template-rows: 20% 2fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+  }
+}
+
+.testimonials {
+  &__main-title {
+    position: relative;
+    margin: 0 auto;
+    &::before {
+      content: '';
+      @include background-before(37%, 0);
+    }
+
+    &::after {
+      content: '';
+      @include background-after(37%, 0);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+
+  }
+
+  &__item {
+    background-color: $color-white;
+    position: relative;
+    @include box-shadow;
+    &::after {
+      content: '';
+      @include triangle;
+    }
+
+  }
+
+  &__text {
+    padding: 2rem;
+    color: $color-dark-text;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+}
+
+.development {
+
+  &__title {
+    margin: 0 auto;
+    &::before {
+      content: '';
+      @include background-before(26%, 0);
+    }
+    &::after {
+      content: '';
+      @include background-after(26%, 0);
+    }
+  }
+
+}
+
+.tabs {
+  &__list {
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid $color-light-grey;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__list-item {
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 50%;
+    border-right: 1px solid $color-light-grey;
+    &:active {
+      background-color: $color-dark-grey;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark-text;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    outline: none;
+
+    &:active {
+      color: $color-white;
+    }
+
+  }
+
+  &__content {
+    background-color: $color-white;
+    padding: 2rem;
+  }
+
+  &__title {
+    color: $color-dark-text;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__info {
+    font-size: 1.4rem;
+  }
+
+  &__action {
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    background-color: $color-button-primary;
+    padding: 1rem 3rem;
+    color: $color-white;
+    transition: transform 1s;
+    &:hover {
+      background-color: #457fbb;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+}
+
+#tabs-2 {
+  display: none;
+}

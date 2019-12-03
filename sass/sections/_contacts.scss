@@ -1,0 +1,75 @@
+
+
+.contacts {
+  padding-top: 5rem;
+  background-color: $color-dark-grey;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+  }
+
+  &__title {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+  }
+  &__about-info {
+    margin-bottom: 1rem;
+  }
+
+  &__about-info, &__address-line {
+    font-size: 1.6rem;
+  }
+
+  &__tweets-content {
+    font-size: 1.6rem;
+  }
+
+  &__tweets-bold {
+    font-weight: 700;
+    color: $color-white;
+  }
+
+  &__flick-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: .5rem;
+  }
+
+  &__flick-item {
+    width: 9rem;
+    height: 9rem;
+    background-color: $color-grey;
+  }
+
+
+
+}
+
+.posts {
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-main-text;
+    font-size: 1.6rem;
+
+    &:hover {
+      color: $color-button-primary;
+    }
+  }
+}

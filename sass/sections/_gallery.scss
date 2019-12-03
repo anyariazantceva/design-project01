@@ -1,0 +1,38 @@
+
+// Section gallery
+
+.gallery {
+  background-color: $color-light-grey;
+  padding-bottom: 10rem;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-template-rows: 1fr;
+  }
+
+  &__item {
+    @include box-shadow;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 1rem;
+    background-color: $color-white;
+    color: $color-dark-text;
+    font-size: 1.6rem;
+    position: relative;
+    &::after {
+      content: '';
+      @include triangle;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,74 @@
+
+// Section about
+
+.about {
+  background-color: $color-light-grey;
+  padding: 5rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 1s;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $color-white;
+      transform: scale(1.1);
+      @include box-shadow;
+      &::after {
+        content: '';
+        @include triangle;
+      }
+    }
+  }
+
+  &__icon {
+    background-color: $color-dark-grey;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+
+  }
+
+  &__icon-img {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+  }
+
+  &__main--title {
+    font-size: 1.6rem;
+    color: $color-dark-text;
+    text-transform: uppercase;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    color: $color-black;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    background-color: $color-button-primary;
+    padding: 1.5rem 4rem;
+    color: $color-white;
+    border-radius: 2px;
+  }
+}

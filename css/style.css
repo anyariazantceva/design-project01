@@ -27,6 +27,35 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
   font-family: inherit; }
 
+.page__title {
+  color: #4f4d4e;
+  font-size: 2rem;
+  background-color: #efefef;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 4rem;
+  position: relative; }
+  .page__title::before {
+    content: '';
+    display: block;
+    width: 36%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    left: 10rem;
+    top: 1rem; }
+  .page__title::after {
+    content: '';
+    display: block;
+    width: 36%;
+    height: 1.2rem;
+    background: url("../img/Border-BG.jpg") repeat-x;
+    background-size: 14%;
+    position: absolute;
+    right: 10rem;
+    top: 1rem; }
+
 .welcome::after {
   content: '';
   display: block;
@@ -180,35 +209,6 @@ ul, li, h1, h2, h3, h4, h5, h6 {
     padding: 1.5rem 4rem;
     color: #ffffff;
     border-radius: 2px; }
-
-.page__title {
-  color: #4f4d4e;
-  font-size: 2rem;
-  background-color: #efefef;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto 4rem;
-  position: relative; }
-  .page__title::before {
-    content: '';
-    display: block;
-    width: 36%;
-    height: 1.2rem;
-    background: url("../img/Border-BG.jpg") repeat-x;
-    background-size: 14%;
-    position: absolute;
-    left: 10rem;
-    top: 1rem; }
-  .page__title::after {
-    content: '';
-    display: block;
-    width: 36%;
-    height: 1.2rem;
-    background: url("../img/Border-BG.jpg") repeat-x;
-    background-size: 14%;
-    position: absolute;
-    right: 10rem;
-    top: 1rem; }
 
 .gallery {
   background-color: #efefef;
