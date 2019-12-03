@@ -514,3 +514,21 @@ ul, li, h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr 1fr; }
   .footer__container {
     grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 750px) {
+  .welcome__row-first {
+    grid-template-columns: 1fr;
+    grid-template-rows: 14rem; }
+  .welcome__row-second--title {
+    font-size: 1rem; }
+  .welcome__second-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem; }
+  .about__container {
+    grid-template-columns: 1fr; }
+  .contacts__container {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 450px) {
+  .section__container {
+    padding: 1rem 2rem; } }

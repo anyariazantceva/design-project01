@@ -97,3 +97,37 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .welcome {
+    &__row-first {
+      grid-template-columns: 1fr;
+      grid-template-rows: 14rem;
+    }
+    &__row-second--title {
+      font-size: 1rem;
+    }
+    &__second-btn {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contacts {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section__container {
+    padding: 1rem 2rem;
+  }
+}
