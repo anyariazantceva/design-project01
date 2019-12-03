@@ -14,6 +14,7 @@
   outline: none;
   vertical-align: middle;
   font-family: inherit;
+  
 }
 
 // Section welcome
@@ -25,7 +26,7 @@
     width: 100%;
     height: 1.2rem;
     background: url("../img/Border-BG.jpg") repeat-x;
-    background-size: 14%;
+    background-size: 11%;
 
   }
 
@@ -84,6 +85,14 @@
     padding: 1rem 4rem;
     text-transform: uppercase;
     font-weight: 700;
+    transition: transform 1s;
+    &:hover {
+      background-color: #457fbb;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+
   }
 
   &__second--left {
@@ -119,6 +128,13 @@
     color: $color-dark-grey;
     text-transform: uppercase;
     font-size: 1.2rem;
+    transition: transform 1s;
+    &:hover {
+      background-color: #dfe0dc;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
   }
 }
 
@@ -404,6 +420,13 @@
     background-color: $color-button-primary;
     padding: 1rem 3rem;
     color: $color-white;
+    transition: transform 1s;
+    &:hover {
+      background-color: #457fbb;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
   }
 }
 
@@ -482,5 +505,32 @@
     &:hover {
       color: $color-button-primary;
     }
+  }
+}
+
+.footer {
+  background-color: $color-grey;
+  padding: 2rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr 20%;
+    grid-column-gap: 5rem;
+  }
+  &__copyright {
+    font-size: 1.6rem;
+  }
+  &__icons-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &__svg {
+    width: 100%;
+    height: 100%;
   }
 }
