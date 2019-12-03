@@ -7,4 +7,93 @@
 @import './sections/_details.scss';
 @import './sections/_contacts.scss';
 @import './sections/_footer.scss';
+@import 'mobile.scss';
 
+@media screen and (max-width: 992px) {
+  .welcome {
+    &__row-first {
+      grid-template-columns: 1fr 40%;
+      grid-template-rows: 32rem;
+      align-items: center;
+    }
+
+    &__second--left {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .page__title {
+    &::before {
+      @include background-before(23%, 10rem);
+    }
+    &::after {
+      @include background-after(23%, 10rem);
+    }
+  }
+
+  .gallery {
+    &__container {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+  }
+
+  .details {
+    &__container {
+      grid-template-columns: auto;
+      grid-column-gap: 2rem;
+      grid-row-gap: auto;
+      grid-template-rows: auto;
+    }
+
+    &__testimonials, &__development {
+      grid-template-rows: 8% 2fr;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    &__development {
+      margin-top: 6rem;
+    }
+  }
+  .testimonials {
+    &__main-title {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .development {
+    &__title {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .contacts {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
