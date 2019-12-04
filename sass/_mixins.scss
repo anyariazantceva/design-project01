@@ -36,3 +36,17 @@
   right: $right;
   top: 1rem;
 }
+
+@mixin footer-hover($name) {
+  content: $name;
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  background-color: #4f4d4e;
+  color: $color-white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -.5rem;
+  text-align: center;
+
+}

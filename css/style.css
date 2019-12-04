@@ -442,7 +442,8 @@ ul, li, h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background-color: #343434;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  position: relative; }
   .footer__container {
     display: grid;
     grid-template-columns: 2fr 20%;
@@ -458,6 +459,72 @@ ul, li, h1, h2, h3, h4, h5, h6 {
   .footer__svg {
     width: 100%;
     height: 100%; }
+  .footer__twitter:hover::before {
+    content: "Twitter";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
+  .footer__facebook:hover::before {
+    content: "Facebook";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
+  .footer__vimeo:hover::before {
+    content: "Vimeo";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
+  .footer__instagram:hover::before {
+    content: "Instagram";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
+  .footer__google:hover::before {
+    content: "Google+";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
+  .footer__pin:hover::before {
+    content: "Pinterest";
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    background-color: #4f4d4e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -.5rem;
+    text-align: center; }
 
 @media screen and (max-width: 992px) {
   .welcome__row-first {
