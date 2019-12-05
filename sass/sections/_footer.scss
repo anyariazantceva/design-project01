@@ -21,15 +21,21 @@
     height: 3rem;
   }
 
-  &__svg {
+  &__svg path {
     width: 100%;
     height: 100%;
+    &:hover {
+      fill: #ffffff;
+    }
   }
 
   &__twitter {
     &:hover {
       &::before {
         @include footer-hover('Twitter');
+        &::after {
+          @include triangle;
+        }
       }
     }
   }
