@@ -9,7 +9,7 @@
   "author": "Anna Riazantseva",
   "license": "ISC",
   "devDependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.0"
   },
   "dependencies": {}
